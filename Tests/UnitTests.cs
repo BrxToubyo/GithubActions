@@ -58,7 +58,7 @@ namespace GithubActionsLab
 
         // Multiply
         [Test]
-        public void Subtract_Valid()
+        public void Multiply_Valid()
         {
             Assert.AreEqual(2, Program.Multiply("2", "1"));
             Assert.AreEqual(10, Program.Multiply("5", "2"));
@@ -66,7 +66,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Invalid()
+        public void Multiply_Invalid()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -74,7 +74,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Null()
+        public void Multiply_Null()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -83,7 +83,7 @@ namespace GithubActionsLab
 
         // Divide
         [Test]
-        public void Subtract_Valid()
+        public void Divide_Valid()
         {
             Assert.AreEqual(1, Program.Divide("2", "2"));
             Assert.AreEqual(3, Program.Divide("6", "2"));
@@ -91,7 +91,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Invalid()
+        public void Divide_Invalid()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -99,7 +99,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Null()
+        public void Divide_Null()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -108,7 +108,7 @@ namespace GithubActionsLab
 
         // Power
         [Test]
-        public void Subtract_Valid()
+        public void Power_Valid()
         {
             Assert.AreEqual(4, Program.Power("2", "2"));
             Assert.AreEqual(6, Program.Power("6", "2"));
@@ -116,7 +116,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Invalid()
+        public void Power_Invalid()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
@@ -124,7 +124,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Null()
+        public void Power_Null()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
